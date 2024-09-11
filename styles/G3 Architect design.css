@@ -18,6 +18,7 @@ header {
   padding: 1.25rem 1.5rem;
   text-align: center;
   color: #fff;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-top: 2rem;
 }
@@ -117,9 +118,10 @@ nav a {
 }
 .card-title {
   color: #131313;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
+
 .feature-title {
   border-left: 8px solid #ff900e;
   padding-left: 20px;
@@ -139,14 +141,14 @@ nav a {
 }
 .feature-year {
   color: #fff;
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
   margin: 0;
 }
 .feature-text {
   color: #fff;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
 }
@@ -155,8 +157,11 @@ nav a {
 
 @media screen and (max-width: 576px) {
   nav,
-  .team {
+  .team{
     flex-direction: column;
+  }
+  .features{
+    flex-direction: column-reverse;
   }
   header {
     padding: 20px;
@@ -175,6 +180,30 @@ nav a {
   .team-text {
     margin: auto;
   }
+  .features {
+    margin: 0 10px;
+  }
+  .features-section {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .features-pic img{
+    width: 100%;
+  }
+  .features-div {
+    width: auto;
+    padding: 16px 0;
+    position:static;
+    }
+    .feature-year {
+     font-size: 2rem;  
+    }
+    .feature-text {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    
 }
 
 /* Medium device responsive styles  */
@@ -182,6 +211,9 @@ nav a {
   nav,
   .team {
     flex-direction: column;
+  }
+  .features{
+    flex-direction: column-reverse;
   }
   .nav-title {
     text-align: center;
@@ -209,4 +241,26 @@ nav a {
   .team {
     margin: 0px;
   }
+  .features {
+    margin: 0 10px;
+  }
+  .features-section {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .features-pic img{
+    width: 100%;
+  }
+  .features-div {
+    width: auto;
+    padding: 16px 0;
+    position:static;
+    }
+    .feature-year {
+     font-size: 2rem;  
+    }
+    .feature-text {
+      font-size: 1.5rem;
+    }
 }
