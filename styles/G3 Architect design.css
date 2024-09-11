@@ -106,17 +106,53 @@ nav a {
     padding: 20px;
   }
   .header-title {
-    max-width:400px;
-    margin: 20px;
+    max-width:300px;
+    margin: 0px;
     
   }
   .team-pic {
-    
+    display: grid;
     grid-template-columns: 1fr;
-  
+    
   }
   .team {
     
-    margin: 20px;
+    margin: 10px;
   }
+  .team-text {
+
+    margin: auto;
+  }
+}
+@media screen and (min-width:576px) and (max-width:920px){
+  nav, .team{
+    flex-direction: column;
+  }
+  .nav-title{
+    text-align: center;
+  }
+  nav ul{
+    text-align: center;
+  }
+  header{
+    padding: 20px;
+  }
+  .header-title {
+    max-width: 660px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .team-pic {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .5rem;
+    max-width: 650px;
+  }
+  .team-pic img{
+    width: 100%;
+  }
+  .team{
+    margin: 0px;
+  }
+
 }
