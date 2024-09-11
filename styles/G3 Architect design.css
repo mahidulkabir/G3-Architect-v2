@@ -53,13 +53,14 @@ nav a {
   margin: 100px auto;
   text-align: center;
 }
-.header-main-title {
+.common-title {
   font-size: 4rem;
   font-weight: 700;
 }
-.header-main-description {
+.common-description{
   font-size: 1rem;
   font-weight: 400;
+  color: #727272;
 }
 .banner-img {
   width: 100%;
