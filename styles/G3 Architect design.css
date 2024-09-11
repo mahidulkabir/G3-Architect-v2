@@ -5,27 +5,25 @@
 /* common section styles  */
 
 * {
-    font-family: "Work Sans", system-ui;
+  font-family: "Work Sans", system-ui;
 }
-body {
+header {
   background-color: rgba(255, 228, 196, 0.466);
 }
-.common-button{
-    border-radius: 8px;
-    border: 0;
-    background-color: #ff900e;
-    max-width:180px;
-    padding: 1.25rem 1.5rem;
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-    margin-top: 3rem;
-
-
+.common-button {
+  border-radius: 8px;
+  border: 0;
+  background-color: #ff900e;
+  max-width: 180px;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 2rem;
 }
 /* header section styles  */
 header {
-  margin: 50px 240px;
+  padding: 50px 240px;
 }
 /* nav section styles  */
 nav {
@@ -43,26 +41,82 @@ nav a {
   font-size: 1.25rem;
   font-weight: 500;
 }
-.nav-title{
-    color: #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin: 0;
+.nav-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
 }
 /* header rest body styles  */
-.header-title{
-    max-width:860px;
-    margin: 100px auto;
-    text-align:center;
+.header-title {
+  max-width: 860px;
+  margin: 100px auto;
+  text-align: center;
 }
-.header-main-title{
-    font-size:4rem;
-    font-weight: 700;
+.header-main-title {
+  font-size: 4rem;
+  font-weight: 700;
 }
-.header-main-description{
-    font-size:1rem;
-    font-weight: 400;
+.header-main-description {
+  font-size: 1rem;
+  font-weight: 400;
 }
-.banner-img{
+.banner-img {
+  width: 100%;
+}
+/* body section styles  */
+/* team section styles */
+.team {
+  display: flex;
+  margin: 50px 300px;
+}
+.team-pic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.team-text {
+  max-width: 640px;
+  margin: auto 0 auto 70px;
+}
+.team-quick {
+  color: #727272;
+
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.team-our {
+  color: #131313;
+
+  font-size: 2.8rem;
+
+  font-weight: 700;
+}
+.team-features {
+  color: #ff900e;
+  font-size: 45px;
+  font-weight: 700;
+}
+@media screen and (max-width:576px){
+  nav, .team{
+    flex-direction: column;
+  }
+  header{
+    padding: 20px;
+  }
+  .header-title {
+    max-width:400px;
+    margin: 20px;
     
+  }
+  .team-pic {
+    
+    grid-template-columns: 1fr;
+  
+  }
+  .team {
+    
+    margin: 20px;
+  }
 }
